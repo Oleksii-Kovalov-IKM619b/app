@@ -4,11 +4,11 @@ int main() {
   float num1, num2;
   char op;
 
-  std::cout << "Введите первое число: ";
+  std::cout << "Введите первое число: "<< std::endl;
   std::cin >> num1;
-  std::cout << "Введите оператор (+, -, *, /): ";
+  std::cout << "Введите оператор (+, -, *, /): "<< std::endl;
   std::cin >> op;
-  std::cout << "Введите второе число: ";
+  std::cout << "Введите второе число: "<< std::endl;
   std::cin >> num2;
 
   float result;

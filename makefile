@@ -11,5 +11,8 @@ calc: calc.o
 calc.o: calc.cpp
 	$(CC) $(CFLAGS) calc.cpp
 
+test: calc
+	cd test && bash ./test.sh && cd ..
 clean:
 	rm -rf *.o calc
+

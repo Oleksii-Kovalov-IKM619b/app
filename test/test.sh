@@ -1,6 +1,5 @@
-
+#!/bin/bash
 # Test cases #
-
 test_cases=(
   "2 + 2"
   "5 - 3"
@@ -9,9 +8,7 @@ test_cases=(
   "10 / 0"
   "5 & 3"
 )
-
 # Expected results #
-
 expected_results=(
   "4"
   "2"
@@ -20,14 +17,10 @@ expected_results=(
   "Ошибка: деление на ноль"
   "Ошибка: недопустимый оператор"
 )
-
 # init #
-
 pass_count=0
 fail_count=0
-
 # Test executions # 
-
 for i in ${!test_cases[@]}
  do
   echo "Test case $i: ${test_cases[$i]}"
@@ -41,15 +34,11 @@ for i in ${!test_cases[@]}
     ((fail_count++))
   fi
 done
-
 # Test report output # 
-
 echo "Total tests: ${#test_cases[@]}"
 echo "Pass count: $pass_count"
 echo "Fail count: $fail_count"
-
 # Number of failed tests #
-
 if [[ $fail_count -gt 0 ]]; then
   exit 1
 else
